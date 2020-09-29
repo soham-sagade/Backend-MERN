@@ -6,7 +6,7 @@ const route = require('./routes');
 const routes = require('./routes');
 const http = require('http');
 const socketio = require('socket.io');
-const PORT = process.env.PORT || 8111;
+const PORT = process.env.PORT || 8000;
 const path = require("path");
 
 const { Socket } = require('dgram');

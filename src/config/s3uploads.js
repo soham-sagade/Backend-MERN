@@ -3,6 +3,7 @@ const multer = require('multer')
 const path = require('path');
 const multerS3 = require('multer-s3')
 require('dotenv').config();
+
 const s3 = new aws.S3({
     accessKeyId : process.env.ACCESS_KEY_ID,
     secretAccessKey : process.env.SECRET_ACCESS_KEY
