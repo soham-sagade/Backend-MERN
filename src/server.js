@@ -16,7 +16,7 @@ const io = socketio(server);
 
 
 
-app.get('/',(req,res) =>{
+app.get('/status',(req,res) =>{
     res.send("HEllo there");
 })
 if(process.env.NODE_ENV != 'production')
