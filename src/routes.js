@@ -18,7 +18,7 @@ routes.get('/status',(req,res) => {
     res.send({status:200});
 })
 
-routes.get()
+
 
 
 
@@ -38,7 +38,7 @@ routes.post('/login',LoginController.store);
 
 //Dashboard
 //routes.get('/dashboard/:eventid', DashboardController.getEvent);
-routes.get('/dashboard',DashboardController.getAllEvents);
+routes.get('/dashboard',verifyToken,DashboardController.getAllEvents);
 routes.get('/dashboard/events',verifyToken,DashboardController.getEventsByUserId);
 routes.get('/dashboard/:sport',verifyToken,DashboardController.getEventByCategory);
 
