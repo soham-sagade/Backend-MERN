@@ -18,7 +18,7 @@ routes.get('/status',(req,res) => {
     res.send({status:200});
 })
 
-routes.get()
+
 
 
 
